@@ -1,0 +1,9 @@
+{
+  "name": "@bun-hmr-issue/form",
+  "main": "./src/index.ts",
+  "type": "module",
+  "peerDependencies": {
+    "react": "catalog:react",
+    "typescript": "^5"
+  }
+}

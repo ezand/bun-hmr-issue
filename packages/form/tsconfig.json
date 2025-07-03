@@ -1,0 +1,22 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    /* Library-Specific Settings & Overrides */
+    "jsx": "react-jsx",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false
+  },
+
+  // Set up path aliases for cleaner imports (e.g., "@/xxxx").
+  "baseUrl": ".",
+  "paths": {
+    "@/*": ["./src/*"]
+  },
+
+  /* Project File Scope */
+  "include": ["src"],
+  "exclude": ["dist"]
+}

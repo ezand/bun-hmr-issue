@@ -1,0 +1,20 @@
+{
+  "name": "@bun-hmr-issue/app",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "src/index.tsx",
+  "module": "src/index.tsx",
+  "scripts": {
+    "dev": "bun --hot src/index.tsx"
+  },
+  "dependencies": {
+    "@bun-hmr-issue/form": "workspace:*",
+    "react": "catalog:react",
+    "react-dom": "catalog:react"
+  },
+  "devDependencies": {
+    "@types/react": "catalog:react",
+    "@types/react-dom": "catalog:react"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    /* Monorepo & Build Strategy */
+    "composite": true,
+    "isolatedModules": true,
+
+    /* Modern Module System & Syntax */
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "target": "esnext",
+    "lib": ["ESNext"],
+    "importHelpers": true,
+    "customConditions": ["development"],
+    "verbatimModuleSyntax": true,
+    "allowImportingTsExtensions": true,
+
+    /* Declaration File Output */
+    "declaration": true,
+    "declarationMap": true,
+    "emitDeclarationOnly": true,
+    "noEmitOnError": true,
+
+    /* Code Quality & Strictness */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "allowJs": false,
+    "skipLibCheck": true
+  }
+}

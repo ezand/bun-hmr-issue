@@ -1,0 +1,31 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    /* ## App-Specific Settings & Overrides ## */
+
+    // Disable output from TypeScript; Bun will handle all bundling and transpiling.
+    // This turns 'tsc' into a pure type-checker for your app.
+    "noEmit": true,
+
+    // Allow JS files and enable React 17+ JSX transform.
+    "allowJs": true,
+    "jsx": "react-jsx",
+
+    // Set up path aliases for cleaner imports (e.g., "@/components/Button").
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+
+    // We also need DOM types for browser APIs.
+    "lib": ["ESNext", "DOM"],
+
+    // Code Quality & Strictness
+    "noUnusedLocals": false,
+    "noUnusedParameters": false
+  },
+
+  /* ## Project File Scope ## */
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
